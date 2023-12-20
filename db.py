@@ -1,14 +1,18 @@
 from orator import DatabaseManager, Schema, Model
+import pymysql
+import time
+import asyncio
+import aiomysql
 
 DATABASES = {
-    "postgres": {
-        "driver": "postgres",
-        "host": "db",
-        "database": "example",
-        "user": "daniel",
-        "password": "nihao",
+    "mysql": {
+        "driver": "mysql",
+        "host": "localhost",
+        "database": "ShapeMentor",
+        "user": "root",
+        "password": "cym991019",
         "prefix": "",
-        "port": 5432,
+        "port": 3306,
     }
 }
 

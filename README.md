@@ -1,6 +1,9 @@
 # GraphQL with FastAPI, Orator and PostgreSQL
 An example of using GraphQL in Python 3 FastAPI.
 
+* [What is GraphQL?](#8037f33873025b496cb1ecbe09076f05) <a name="toc_8037f33873025b496cb1ecbe09076f05" />
+---
+
 ## migrations
 Holds the table fields definitions.
 - You can add table with orator command `orator make:model <table_name> -m`.
