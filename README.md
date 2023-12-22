@@ -27,5 +27,5 @@ Define GraphQL Schema (Query and Mutation).
 Define meta for GraphQL Model that is used by Query and Mutation for referencing to the db tables. It also shows how to use PyDantic as validation system.
 
 ## How to try
-Install Docker, docker-compose and run `docker-compose up`. It will run at `localhost:7000/graphiql`.
+Install Docker, docker-compose and run `docker-compose up`. It will run at `localhost:8000/graphiql`.
 You can manage the db with adminer at `localhost:8080`.

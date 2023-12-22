@@ -1,21 +1,23 @@
+
+
 from orator import DatabaseManager, Schema, Model
-import pymysql
-import time
-import asyncio
-import aiomysql
 
 DATABASES = {
-    "mysql": {
-        "driver": "mysql",
-        "host": "localhost",
-        "database": "ShapeMentor",
-        "user": "root",
-        "password": "cym991019",
+    "sb": {
+        "driver": "postgres",
+        "host": "db",
+        "database": "example",
+        "user": "daniel",
+        "password": "nihao",
         "prefix": "",
-        "port": 3306,
-    }
+        "port": 5432,
+    },
+
 }
 
 db = DatabaseManager(DATABASES)
 schema = Schema(db)
 Model.set_connection_resolver(db)
+
+
+
