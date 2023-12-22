@@ -73,9 +73,15 @@ if result.errors:
 else:
     print("All exercise types:", result.data['listAllExercises'])
 
-# Query to Get Calorie Burn Rate for a Specific Exercise Type
-query_calories = '{ getCaloriesBurned(exerciseType: "running") }'
-result = exercise_schema.execute(query_calories)
+def create_exercise_calorie_query(exercise_type):
+    return '{{ getCaloriesBurned(exerciseType: "{}") }}'.format(exercise_type)
+
+# Example usage:
+exercise_type_variable = "running"  # can be any string
+query_exercise_calories = create_exercise_calorie_query(exercise_type_variable)
+
+
+result = exercise_schema.execute(query_exercise_calories)
 if result.errors:
     print("Errors:", result.errors)
 else:

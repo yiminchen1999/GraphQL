@@ -103,8 +103,13 @@ else:
 # Schema
 schema = Schema(query=Query, mutation=Mutation)
 
-# Executing a Query to Get Calories for a Specific Food Type
-query_calories = '{ getUnitCalories(foodType: "apple") }'
+def create_calorie_query(food_type):
+    return '{{ getUnitCalories(foodType: "{}") }}'.format(food_type)
+
+
+food_type_variable = "banana"  # can be any string
+query_calories = create_calorie_query(food_type_variable)
+
 result = schema.execute(query_calories)
 if result.errors:
     print("Errors:", result.errors)
