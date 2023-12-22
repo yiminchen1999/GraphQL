@@ -15,7 +15,15 @@ EXERCISE_LOOKUP_DB = {
     "golfing": {"calories_burned_per_minute": 314 / 60},  # 5.23 calories per minute
     "hiking": {"calories_burned_per_minute": 438 / 60},  # 7.3 calories per minute
     "skiing_downhill": {"calories_burned_per_minute": 314 / 60},  # 5.23 calories per minute
-    "walking": {"calories_burned_per_minute": 314 / 60}  # 5.23 calories per minute (3.5 mph)
+    "walking": {"calories_burned_per_minute": 314 / 60} ,
+    "jogging": {"calories_burned_per_minute": 450 / 60},  # 7.5 calories per minute
+    "tennis": {"calories_burned_per_minute": 480 / 60},  # 8.0 calories per minute
+    "basketball": {"calories_burned_per_minute": 584 / 60},  # 9.73 calories per minute
+    "soccer": {"calories_burned_per_minute": 504 / 60},  # 8.4 calories per minute
+    "zumba": {"calories_burned_per_minute": 350 / 60},  # 5.83 calories per minute
+    "crossfit": {"calories_burned_per_minute": 500 / 60},  # 8.33 calories per minute
+    "rock_climbing": {"calories_burned_per_minute": 550 / 60}
+    # 5.23 calories per minute (3.5 mph)
 }
 
 # ExerciseItem Type
